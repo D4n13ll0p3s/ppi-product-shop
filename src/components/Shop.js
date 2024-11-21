@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import Product from "./Product";
 import { CircularProgress } from "@mui/material";
-import { CartContext } from "./context/CartContext";
+import { CartContext } from "../context/CartContext";
 
 export default function Shop() {
 
-const { products, loading, error} = useContext (CartContext)
+    const { products, loading, error } = useContext(CartContext);
 
     return (
         <section id="shop">

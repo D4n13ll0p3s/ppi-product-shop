@@ -5,7 +5,7 @@ import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useContext } from "react";
-import { CartContext } from "./context/CartContext";
+import { CartContext } from "../context/CartContext";
 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
@@ -19,14 +19,11 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 export default function Header() {
-  
 
-  const {Items}= useContext(CartContext);
+  const { items } = useContext(CartContext);
 
+  const cartQuantity = items.length;
 
-
-  const cartQuantity = 1;
-  
   return (
     <>
       <header id="main-header">
