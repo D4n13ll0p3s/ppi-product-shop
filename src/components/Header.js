@@ -28,7 +28,7 @@ export default function Header() {
     <>
       <header id="main-header">
         <div id="main-title">
-          <h1>Elegant Smartphone Shop</h1>
+          <h1>Elegant motorcycles Shop</h1>
         </div>
         <p>
           <Link to="/checkout">
